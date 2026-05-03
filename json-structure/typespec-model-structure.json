@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TypeSpec Model Structure",
+  "description": "Structural definition of a TypeSpec model type",
+  "type": "object",
+  "properties": {
+    "kind": {
+      "type": "string",
+      "enum": ["Model"],
+      "description": "TypeSpec node kind"
+    },
+    "name": {
+      "type": "string",
+      "description": "Model type name"
+    },
+    "namespace": {
+      "type": "object",
+      "description": "Containing namespace"
+    },
+    "properties": {
+      "type": "object",
+      "description": "Map of property names to ModelProperty nodes",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "type": {"type": "object"},
+          "optional": {"type": "boolean"},
+          "decorators": {"type": "array"}
+        }
+      }
+    },
+    "baseModel": {
+      "type": "object",
+      "description": "Extended base model (via `extends`)"
+    },
+    "indexer": {
+      "type": "object",
+      "description": "Index signature for record types"
+    },
+    "decorators": {
+      "type": "array",
+      "description": "Applied decorators"
+    },
+    "isFinished": {
+      "type": "boolean",
+      "description": "Whether the model has been fully resolved"
+    }
+  }
+}

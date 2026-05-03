@@ -1,0 +1,176 @@
+name: TypeSpec
+description: >-
+  Vocabulary and taxonomy for TypeSpec API description language concepts,
+  compiler terms, emitter ecosystem, and related API design patterns.
+created: "2026-05-03"
+modified: "2026-05-03"
+tags:
+  - TypeSpec
+  - API Design
+  - Specification Language
+  - Code Generation
+
+terms:
+
+  # Core Language Concepts
+  - term: Namespace
+    definition: >-
+      A named container that groups TypeSpec types, operations, and interfaces.
+      Namespaces help organize large API definitions and prevent naming conflicts.
+    tags: [Language, Organization]
+
+  - term: Model
+    definition: >-
+      A TypeSpec type definition representing a structured data shape with
+      named properties. Equivalent to an object type or schema. Can extend
+      other models.
+    tags: [Language, Types]
+
+  - term: Interface
+    definition: >-
+      A named collection of operations in TypeSpec. Interfaces group related
+      API operations and can be extended by other interfaces.
+    tags: [Language, Operations]
+
+  - term: Operation
+    definition: >-
+      A named API function in TypeSpec with typed input parameters and a
+      return type. Decorated with `@route`, `@get`, `@post`, etc. for
+      HTTP mapping.
+    tags: [Language, HTTP]
+
+  - term: Scalar
+    definition: >-
+      A primitive type in TypeSpec (string, int32, float64, boolean, bytes,
+      decimal, etc.) that can be extended with constraints via decorators.
+    tags: [Language, Types]
+
+  - term: Enum
+    definition: >-
+      A TypeSpec type with a fixed set of named values. Enums can be
+      string or numeric and are emitted as JSON Schema enums or OpenAPI
+      enum schemas.
+    tags: [Language, Types]
+
+  - term: Union
+    definition: >-
+      A TypeSpec type that can be one of several types, expressed with the `|`
+      operator. Maps to `oneOf` or `anyOf` in JSON Schema/OpenAPI.
+    tags: [Language, Types]
+
+  - term: Tuple
+    definition: >-
+      A fixed-length array type in TypeSpec where each element has a
+      specific type.
+    tags: [Language, Types]
+
+  - term: Template
+    definition: >-
+      A parameterized TypeSpec type or operation that can be instantiated
+      with specific type arguments, enabling type-safe reuse of patterns.
+    tags: [Language, Generics]
+
+  # Decorators
+  - term: Decorator
+    definition: >-
+      A function prefixed with `@` in TypeSpec that adds metadata or
+      modifies the behavior of a type, operation, or property. Decorators
+      are the primary extensibility mechanism (e.g., `@route`, `@doc`, `@format`).
+    tags: [Language, Extensibility]
+
+  - term: "@route"
+    definition: >-
+      HTTP decorator that specifies the URL path template for an operation
+      or interface.
+    tags: [HTTP Decorators]
+
+  - term: "@doc"
+    definition: >-
+      Decorator that attaches documentation strings to types, operations,
+      and properties, emitted as `description` in OpenAPI.
+    tags: [Documentation Decorators]
+
+  - term: "@versioned"
+    definition: >-
+      Decorator that marks a namespace as supporting API versioning with
+      version enums and adds versioned emitter support.
+    tags: [Versioning Decorators]
+
+  - term: "@discriminator"
+    definition: >-
+      Decorator that marks a model property as a discriminator field for
+      polymorphic type hierarchies, emitting `discriminator` in OpenAPI.
+    tags: [Polymorphism Decorators]
+
+  # Emitters
+  - term: Emitter
+    definition: >-
+      A TypeSpec plugin that transforms a compiled TypeSpec program into a
+      target format (OpenAPI, JSON Schema, Protobuf, client SDKs, etc.).
+    tags: [Tooling, Code Generation]
+
+  - term: OpenAPI Emitter
+    definition: >-
+      The `@typespec/openapi3` package that emits OpenAPI 3.0 or 3.1 from
+      TypeSpec definitions.
+    tags: [Emitters, OpenAPI]
+
+  - term: JSON Schema Emitter
+    definition: >-
+      The `@typespec/json-schema` package that emits JSON Schema documents
+      from TypeSpec model definitions.
+    tags: [Emitters, JSON Schema]
+
+  - term: Protobuf Emitter
+    definition: >-
+      The `@typespec/protobuf` package that emits `.proto` files for gRPC
+      service definitions from TypeSpec.
+    tags: [Emitters, Protocol Buffers]
+
+  # Libraries
+  - term: Library
+    definition: >-
+      A reusable TypeSpec package that provides decorators, types, and
+      emitters. Core libraries include `@typespec/http`, `@typespec/rest`,
+      `@typespec/openapi`, and `@typespec/versioning`.
+    tags: [Tooling, Packages]
+
+  - term: HTTP Library
+    definition: >-
+      The `@typespec/http` library providing decorators for describing
+      HTTP REST APIs: `@route`, `@get`, `@post`, `@put`, `@delete`,
+      `@patch`, `@query`, `@header`, `@body`, `@statusCode`.
+    tags: [Libraries, HTTP]
+
+  - term: REST Library
+    definition: >-
+      The `@typespec/rest` library providing decorators for common REST
+      patterns: `@resource`, `@reads`, `@creates`, `@updates`, `@deletes`,
+      `@list`.
+    tags: [Libraries, REST]
+
+  - term: Versioning Library
+    definition: >-
+      The `@typespec/versioning` library providing decorators for
+      API versioning: `@versioned`, `@added`, `@removed`, `@renamed`,
+      `@madeOptional`, `@typeChangedFrom`.
+    tags: [Libraries, Versioning]
+
+  # Output Concepts
+  - term: tspconfig.yaml
+    definition: >-
+      The TypeSpec project configuration file specifying emitters to run,
+      emitter options, import paths, and linter rules.
+    tags: [Configuration]
+
+  - term: Diagnostic
+    definition: >-
+      A compiler error or warning produced during TypeSpec compilation with
+      a code, message, severity, and source location.
+    tags: [Compiler, Errors]
+
+  - term: Projection
+    definition: >-
+      A TypeSpec feature for transforming the type graph at emit time,
+      used to produce version-specific API snapshots.
+    tags: [Versioning, Compiler]

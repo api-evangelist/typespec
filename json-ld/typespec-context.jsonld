@@ -1,0 +1,71 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "tsp": "https://typespec.io/vocab#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "TypeSpecProgram": "tsp:TypeSpecProgram",
+    "TypeSpecNamespace": "tsp:TypeSpecNamespace",
+    "TypeSpecModel": "tsp:TypeSpecModel",
+    "TypeSpecInterface": "tsp:TypeSpecInterface",
+    "TypeSpecOperation": "tsp:TypeSpecOperation",
+    "TypeSpecEnum": "tsp:TypeSpecEnum",
+    "TypeSpecScalar": "tsp:TypeSpecScalar",
+    "TypeSpecDecorator": "tsp:TypeSpecDecorator",
+    "TypeSpecEmitter": "tsp:TypeSpecEmitter",
+    "TypeSpecLibrary": "tsp:TypeSpecLibrary",
+
+    "SoftwareApplication": "schema:SoftwareApplication",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "version": "schema:version",
+    "url": "schema:url",
+
+    "namespaceName": {
+      "@id": "tsp:namespaceName",
+      "@type": "xsd:string"
+    },
+    "modelName": {
+      "@id": "tsp:modelName",
+      "@type": "xsd:string"
+    },
+    "operationName": {
+      "@id": "tsp:operationName",
+      "@type": "xsd:string"
+    },
+    "decoratorName": {
+      "@id": "tsp:decoratorName",
+      "@type": "xsd:string"
+    },
+    "emitterTarget": {
+      "@id": "tsp:emitterTarget",
+      "@type": "xsd:string"
+    },
+    "hasProperty": {
+      "@id": "tsp:hasProperty",
+      "@type": "@id"
+    },
+    "hasOperation": {
+      "@id": "tsp:hasOperation",
+      "@type": "@id"
+    },
+    "extendsModel": {
+      "@id": "tsp:extendsModel",
+      "@type": "@id"
+    },
+    "httpMethod": {
+      "@id": "tsp:httpMethod",
+      "@type": "xsd:string"
+    },
+    "httpRoute": {
+      "@id": "tsp:httpRoute",
+      "@type": "xsd:string"
+    },
+    "isOptional": {
+      "@id": "tsp:isOptional",
+      "@type": "xsd:boolean"
+    }
+  }
+}
