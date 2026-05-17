@@ -37,11 +37,11 @@ apis:
     properties:
       - type: Documentation
         url: https://typespec.io/docs
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/microsoft/typespec
       - type: npm Package
         url: https://www.npmjs.com/package/@typespec/compiler
-      - type: Getting Started
+      - type: GettingStarted
         url: https://typespec.io/docs/getting-started/getting-started-rest
       - type: Language Reference
         url: https://typespec.io/docs/language-basics/overview
@@ -62,7 +62,7 @@ apis:
         url: https://typespec.io/docs/emitters/openapi3/reference
       - type: npm Package
         url: https://www.npmjs.com/package/@typespec/openapi3
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/microsoft/typespec/tree/main/packages/openapi3
 
   - aid: typespec:typespec-json-schema-emitter
@@ -139,7 +139,7 @@ common:
     url: https://typespec.io
   - type: Documentation
     url: https://typespec.io/docs
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/microsoft/typespec
   - type: npm
     url: https://www.npmjs.com/package/@typespec/compiler
@@ -149,9 +149,9 @@ common:
     url: https://typespec.io/blog
   - type: Community
     url: https://github.com/microsoft/typespec/discussions
-  - type: Release Notes
+  - type: ReleaseNotes
     url: https://github.com/microsoft/typespec/releases
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/typespec-context.jsonld
   - type: Vocabulary
     url: vocabulary/typespec-vocabulary.yml
