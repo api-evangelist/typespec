@@ -2,13 +2,13 @@
   "repo": "typespec",
   "feeds": [
     {
-      "source": "https://typespec.io/playground",
-      "feed_url": "https://typespec.io/playground",
-      "title": "",
+      "source": "https://typespec.io/blog",
+      "feed_url": "",
       "saved": 0,
-      "method": "none"
+      "method": "agent-scrape"
     }
   ],
-  "fetched": "2026-06-14T20:42:17Z",
-  "post_count": 0
+  "fetched": "2026-06-27T13:18:15Z",
+  "post_count": 0,
+  "agent_pulled": "2026-06-27"
 }
