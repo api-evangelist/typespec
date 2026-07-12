@@ -135,6 +135,8 @@ maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 common:
+  - type: DomainSecurity
+    url: security/typespec-domain-security.yml
   - type: Website
     url: https://typespec.io
   - type: Documentation
