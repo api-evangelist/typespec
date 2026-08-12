@@ -147,6 +147,9 @@ maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 common:
+  - type: License
+    name: MIT
+    url: https://github.com/microsoft/typespec/blob/main/LICENSE
   - type: DomainSecurity
     url: security/typespec-domain-security.yml
   - type: Website
