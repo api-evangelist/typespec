@@ -85,6 +85,10 @@ apis:
     humanURL: https://typespec.io/docs/emitters/json-schema/reference
     tags:
       - Code Generation
+      - JSON-Schema
+      - Validation
+    tags_raw:
+      - Code Generation
       - JSON Schema
       - Validation
     properties:
