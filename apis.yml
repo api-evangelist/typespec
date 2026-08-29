@@ -8,6 +8,18 @@ description: >-
   built-in support for versioning, metadata, and extensibility via decorators
   and libraries.
 type: Index
+deliveryModel:
+  model: self-hosted
+  license: MIT
+  open_source: true
+  commercial: false
+  callable_host: false
+  label: Self-hosted open source · you run it yourself
+  confidence: high
+  source:
+  - license
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
@@ -151,6 +163,14 @@ maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 common:
+  - type: IssueTracker
+    url: https://github.com/microsoft/typespec/issues
+  - type: SecurityPolicy
+    url: https://github.com/microsoft/typespec/blob/main/SECURITY.md
+  - type: CodeOfConduct
+    url: https://github.com/microsoft/typespec/blob/main/CODE_OF_CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/microsoft/typespec/blob/main/CONTRIBUTING.md
   - type: License
     name: MIT
     url: https://github.com/microsoft/typespec/blob/main/LICENSE
