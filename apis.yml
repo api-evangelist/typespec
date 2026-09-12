@@ -1,5 +1,6 @@
 aid: typespec
 name: TypeSpec
+x-parent: microsoft
 description: >-
   TypeSpec is an API description language developed by Microsoft for defining
   API shapes that compile to OpenAPI, JSON Schema, Protobuf, and other output
