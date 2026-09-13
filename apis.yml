@@ -37,6 +37,7 @@ image: https://typespec.io/img/favicon.svg
 tags:
   - API Design
   - Code Generation
+  - Developer Tools
   - OpenAPI
   - Protocol Buffers
   - Specification Language
