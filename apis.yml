@@ -58,6 +58,11 @@ apis:
     tags:
       - API Design
       - Code Generation
+      - Compilers
+      - Specification Language
+    tags_raw:
+      - API Design
+      - Code Generation
       - Compiler
       - Specification Language
     properties:
