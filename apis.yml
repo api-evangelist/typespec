@@ -104,12 +104,13 @@ apis:
     humanURL: https://typespec.io/docs/emitters/json-schema/reference
     tags:
       - Code Generation
-      - JSON-Schema
+      - JSON Schema
       - Validation
     tags_raw:
       - Code Generation
       - JSON Schema
       - Validation
+      - JSON-Schema
     properties:
       - type: Documentation
         url: https://typespec.io/docs/emitters/json-schema/reference
