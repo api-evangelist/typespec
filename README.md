@@ -64,129 +64,145 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-TypeSpec is an API description language developed by Microsoft for defining API shapes that compile to OpenAPI, JSON Schema, Protobuf, and other output formats. It provides a type-safe, composable language for describing REST APIs, gRPC services, and data schemas with built-in versioning, documentation, and extensibility via decorators.
+TypeSpec is an API description language developed by Microsoft for defining API shapes that compile to OpenAPI, JSON Schema, Protobuf, and other output formats. It provides a language and toolchain for describing REST APIs, gRPC services, and data schemas in a type-safe, composable way with built-in support for versioning, metadata, and extensibility via decorators and libraries.
 
-**URL:** [https://typespec.io](https://typespec.io)
+**Areas:** API Design · Code Generation · Developer Tools · OpenAPI · Protocol Buffers · Specification Language
 
-## Tags
+## TypeSpec on APIs.io
 
-API Design, Code Generation, OpenAPI, Protocol Buffers, Specification Language
+Everything profiled for TypeSpec is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/typespec/](https://apis.io/providers/typespec/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (6)
 
-- **Created:** 2026-03-25
-- **Modified:** 2026-05-03
+- [TypeSpec Compiler](https://apis.io/apis/typespec/typespec-compiler/) — The TypeSpec compiler processes `.tsp` TypeSpec files and emits output for configured emitters (OpenAPI, JSON Schema, Protobuf, etc.). It provides a…
+- [TypeSpec OpenAPI Emitter](https://apis.io/apis/typespec/typespec-openapi-emitter/) — The TypeSpec OpenAPI emitter converts TypeSpec definitions to OpenAPI 3.0 specifications. It supports HTTP operations, request/response bodies, security…
+- [TypeSpec JSON Schema Emitter](https://apis.io/apis/typespec/typespec-json-schema-emitter/) — Emits JSON Schema documents from TypeSpec model definitions, enabling data validation and type documentation workflows.
+- [TypeSpec Protobuf Emitter](https://apis.io/apis/typespec/typespec-protobuf-emitter/) — Emits Protocol Buffer `.proto` files from TypeSpec service definitions, enabling gRPC service generation from a single TypeSpec source.
+- [TypeSpec HTTP Library](https://apis.io/apis/typespec/typespec-http-library/) — The TypeSpec HTTP library provides decorators and types for describing HTTP REST APIs including routes, operations, request bodies, query parameters,…
+- [TypeSpec REST Library](https://apis.io/apis/typespec/typespec-rest-library/) — The TypeSpec REST library provides decorators for REST API patterns including resource operations (CRUD), collection operations, and standardized error…
 
-## APIs
+### Published properties
 
-### TypeSpec Compiler
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Programmatic Node.js/TypeScript API for processing TypeSpec files, running emitters, and building TypeSpec tooling.
+#### MCP servers (1)
 
-**Human URL:** [https://typespec.io/docs](https://typespec.io/docs)
+Model Context Protocol servers that expose the API to agents.
 
-**Tags:** API Design, Code Generation, Compiler, Specification Language
+- [MCP Server](https://apis.io/servers/typespec/mcp-server/)
 
-**Properties**
-- [Documentation](https://typespec.io/docs)
-- [GitHub Repository](https://github.com/microsoft/typespec)
-- [npm Package](https://www.npmjs.com/package/@typespec/compiler)
-- [Getting Started](https://typespec.io/docs/getting-started/getting-started-rest)
+#### JSON Schema (1)
 
-### TypeSpec OpenAPI Emitter
+The data models the API reads and writes.
 
-Converts TypeSpec definitions to OpenAPI 3.0 specifications with HTTP operations, security schemes, and versioning.
+- [TypeSpec Program](https://apis.io/schemas/typespec/typespec-program/)
 
-**Human URL:** [https://typespec.io/docs/emitters/openapi3/reference](https://typespec.io/docs/emitters/openapi3/reference)
+#### JSON Structure (1)
 
-**Tags:** Code Generation, OpenAPI, REST API
+Data models expressed in JSON Structure.
 
-**Properties**
-- [Documentation](https://typespec.io/docs/emitters/openapi3/reference)
-- [npm Package](https://www.npmjs.com/package/@typespec/openapi3)
+- [Typespec Model Structure](https://apis.io/json-structure/typespec/typespec-model-structure/)
 
-### TypeSpec JSON Schema Emitter
+#### JSON-LD (1)
 
-Emits JSON Schema documents from TypeSpec model definitions for data validation workflows.
+Linked-data contexts for the provider's vocabulary.
 
-**Human URL:** [https://typespec.io/docs/emitters/json-schema/reference](https://typespec.io/docs/emitters/json-schema/reference)
+- [Typespec Context](https://apis.io/jsonld/typespec/typespec-context/)
 
-**Tags:** Code Generation, JSON Schema, Validation
+#### Vocabulary (1)
 
-**Properties**
-- [Documentation](https://typespec.io/docs/emitters/json-schema/reference)
-- [npm Package](https://www.npmjs.com/package/@typespec/json-schema)
+The provider's domain terms, defined.
 
-### TypeSpec Protobuf Emitter
+- [TypeSpec Vocabulary](https://apis.io/vocabularies/typespec/typespec-vocabulary/)
 
-Emits `.proto` files for gRPC service definitions from TypeSpec source.
+#### Governance rules (1)
 
-**Human URL:** [https://typespec.io/docs/emitters/protobuf/reference](https://typespec.io/docs/emitters/protobuf/reference)
+Spectral rulesets for the provider's contracts.
 
-**Tags:** Code Generation, gRPC, Protocol Buffers
+- [TypeSpec — jsonschema rules](https://apis.io/rules/typespec/typespec-jsonschema-spectral-rules/)
 
-**Properties**
-- [Documentation](https://typespec.io/docs/emitters/protobuf/reference)
-- [npm Package](https://www.npmjs.com/package/@typespec/protobuf)
+#### Security (1)
 
-### TypeSpec HTTP Library
+Authentication, trust centre, and vulnerability disclosure.
 
-Decorators and types for describing HTTP REST APIs: routes, operations, request bodies, parameters, headers, and response codes.
+- [Typespec Domain Security](https://apis.io/security/typespec/typespec-domain-security/)
 
-**Human URL:** [https://typespec.io/docs/libraries/http/reference](https://typespec.io/docs/libraries/http/reference)
+#### Plans and pricing (1)
 
-**Tags:** Decorators, HTTP, REST API
+Published plans, tiers and prices.
 
-**Properties**
-- [Documentation](https://typespec.io/docs/libraries/http/reference)
-- [npm Package](https://www.npmjs.com/package/@typespec/http)
+- [Typespec Plans Pricing](https://apis.io/plans/typespec/typespec-plans-pricing/)
 
-### TypeSpec REST Library
+#### Rate limits (1)
 
-Decorators for REST API resource patterns including CRUD, collection operations, and error shapes.
+Published request limits.
 
-**Human URL:** [https://typespec.io/docs/libraries/rest/reference](https://typespec.io/docs/libraries/rest/reference)
+- [Typespec Rate Limits](https://apis.io/rate-limits/typespec/typespec-rate-limits/)
 
-**Tags:** Decorators, Resource Pattern, REST API
+#### FinOps (1)
 
-**Properties**
-- [Documentation](https://typespec.io/docs/libraries/rest/reference)
-- [npm Package](https://www.npmjs.com/package/@typespec/rest)
+What the API costs to run, by operation.
 
-## Common Properties
+- [Typespec Finops](https://apis.io/finops/typespec/typespec-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://typespec.io)
 - [Documentation](https://typespec.io/docs)
-- [GitHub Organization](https://github.com/microsoft/typespec)
-- [npm](https://www.npmjs.com/package/@typespec/compiler)
-- [Playground](https://typespec.io/playground)
 - [Blog](https://typespec.io/blog)
-- [Community](https://github.com/microsoft/typespec/discussions)
-- [Release Notes](https://github.com/microsoft/typespec/releases)
+- [GitHub](https://github.com/microsoft/typespec)
 
-## Artifacts
+## API Evangelist rating
 
-### JSON Schemas
+**Kin Score 29.7** — thin · rubric 0.24.0 · scored 2026-10-17
 
-| Schema | Description |
+| Facet | Score |
 |---|---|
-| [Program](json-schema/typespec-program-schema.json) | TypeSpec compiled program structure |
+| Discoverability | 61.7 |
+| Contract quality | 14.7 |
+| Contract governance | 23.5 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 17.9 |
+| Access clarity | 7.9 |
 
-### JSON Structures
+**Agent readiness 3.7** — human-only
 
-| Structure | Description |
+| Agent-readiness dimension | Result |
 |---|---|
-| [Model](json-structure/typespec-model-structure.json) | TypeSpec model type structure |
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-### JSON-LD Context
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
 
-- [TypeSpec Context](json-ld/typespec-context.jsonld)
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/typespec/](https://apis.io/providers/typespec/).
 
-### Vocabulary
+## How this profile is made
 
-- [TypeSpec Vocabulary](vocabulary/typespec-vocabulary.yml)
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Maintainers
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for TypeSpec: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/typespec/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
